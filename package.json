@@ -1,0 +1,27 @@
+{
+  "name": "bearcat-browser-test",
+  "version": "0.0.1",
+  "main": "app.js",
+  "dependencies": {
+    "bearcat": "0.2.x"
+  },
+  "devDependencies": {
+    "tape": "~2.4.0"
+  },
+  "testling": {
+    "files": "app.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
+  },
+  "scripts": {
+    "test": "tape app.js"
+  }
+}
